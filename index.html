@@ -940,6 +940,16 @@
         font-size: clamp(2.45rem, 13vw, 3.5rem);
       }
 
+      .hero-slide {
+        animation: none;
+        opacity: 0;
+      }
+
+      .hero-slide:nth-child(4) {
+        opacity: 1;
+        animation: breatheImage 6s ease-in-out infinite alternate;
+      }
+
       .nav-actions {
         gap: 8px;
         left: min(calc(100vw - 180px), 210px);
